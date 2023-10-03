@@ -7,27 +7,23 @@
 </head>
     
 <body>
-    <div id="upper-right" class="upper-right hidden">
-        <p>Welcome to my hypertext playlist. Just click one of the hyperlinked words to move between the songs. Headphones are encouraged.</p>
-        <svg id="play" xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
-            <circle cx="50" cy="50" r="45" fill="333" />
-            <polygon points="35,30 35,70 75,50" fill="#fff" />
-        </svg>
-    </div>  
-    <div class="outer-cont">
-        <div class="inner-cont">
-        <p id="hidden-element1" class="hidden">Kids my age were born too late to make mixtapes,</p>
-        <p id="hidden-element2" class="hidden">so instead we burned CDs—a subversive act</p>
-        <p id="hidden-element3" class="hidden">of <a href="tktk">Promethean</a> proportion</p>
-        <p id="hidden-element4" class="hidden">that put the power of creation in our hands,</p>
-        <p id="hidden-element5" class="hidden">at least for the 74 minutes a single CD-R could hold.</p>
-        <p id="hidden-element6" class="hidden">Then came the important work of naming:</p>
-        <p id="hidden-element7" class="hidden">Some scrawled haphazard liner notes in Sharpie across the CD's face;</p>
-        <p id="hidden-element8" class="hidden">others slid, with a painstaking, surgical precision,</p>
-        <p id="hidden-element9" class="hidden">the tip of an X-Acto knife along its reflective surface.</p>
-        <p id="hidden-element10" class="hidden">Either way, we made our mark.</p>
-        <p id="hidden-element11" class="hidden">The CD carried our fingerprints, its data our DNA.</p>
+    <div class="outermost-cont">
+        <div class="outer-cont">
+            <div class="title">the hyper-playlist</div>
+            <div class="inner-cont">
+            <p id="hidden-element1" class="hidden">Kids my age were born too late to make mixtapes, so instead we burned CDs—a subversive act of Promethean proportion that put the power of creation in our hands.</p>
+            <p id="hidden-element2" class="hidden">(At least for the 74 minutes a single CD-R could hold.)</p>
+            <p id="hidden-element3" class="hidden">Then came the important work of naming: Some scrawled haphazard liner notes in Sharpie across the CD's face; others slid, with a painstaking, surgical precision, the tip of an X-Acto knife along its reflective surface. Either way, we made our mark.</p>
+            <p id="hidden-element4" class="hidden">The CD carried our fingerprints, its data our DNA.</p>
+            </div>
         </div>
+        <svg id="outer" class="play hidden" xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+            <circle cx="50" cy="50" r="45" fill="333" />
+            <a href="Air.html"><polygon id="inner" class="play" points="35,30 35,70 75,50" fill="#fff" /></a>
+        </svg>
+        <div id="upper-right" class="upper-right hidden">
+            <p>In the spirit of those lovingly burned CDs, the songs in this hyper-playlist are more than just tracks — they are time capsules, charged with memory. <br><br>As you move between songs, audio will automatically play, so headphones are encouraged.</p>
+        </div>  
     </div>
     <script src="./scripts/main.js"></script>
 </body>

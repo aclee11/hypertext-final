@@ -9,16 +9,21 @@ function fadeInAfterTimeout(targetElementId, timeoutDuration) {
     }, timeoutDuration);
 }
 
-fadeInAfterTimeout("hidden-element1", 1500);
+fadeInAfterTimeout("hidden-element1", 500);
 fadeInAfterTimeout("hidden-element2", 3000);
-fadeInAfterTimeout("hidden-element3", 4500);
-fadeInAfterTimeout("hidden-element4", 6000);
-fadeInAfterTimeout("hidden-element5", 7500);
-fadeInAfterTimeout("hidden-element6", 11000);
-fadeInAfterTimeout("hidden-element7", 12500);
-fadeInAfterTimeout("hidden-element8", 14000);
-fadeInAfterTimeout("hidden-element9", 15500);
-fadeInAfterTimeout("hidden-element10", 17000);
-fadeInAfterTimeout("hidden-element11", 18500);
-fadeInAfterTimeout("upper-right", 20000);
+fadeInAfterTimeout("hidden-element3", 6000);
+fadeInAfterTimeout("hidden-element4", 7500);
+fadeInAfterTimeout("hidden-element5", 9000);
+fadeInAfterTimeout("upper-right", 10000);
+fadeInAfterTimeout("outer", 12000);
+fadeInAfterTimeout("air-hidden1", 2000);
+fadeInAfterTimeout("air-hidden2", 10000);
+fadeInAfterTimeout("air-hidden3", 20000);
+fadeInAfterTimeout("air-hidden4", 25000);
+fadeInAfterTimeout("air-hidden5", 37000);
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+    const audio = document.getElementById('background-song');
+    audio.play();
 });

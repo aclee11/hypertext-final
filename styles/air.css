@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&family=DM+Sans:opsz@9..40&display=swap');
+
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Cutive Mono', monospace;
+  background-image: url('../images/air-album-art.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  backdrop-filter: blur(10px);
+  min-width: 100%;
+  min-height: 100%;
+  font-size: 22px;
+}
+
+.outermost-cont {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+}
+
+.paragraph-container {
+  margin: 0;
+  padding: 0;
+  max-height: 80%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bubble {
+  background-color: rgba(255, 255, 255, 0.5);
+  color: black;
+  border: 1px;
+  border-style: solid;
+  text-align: center;
+  border-radius: 20px;
+  padding: 10px;
+  width: 400px;
+}
+
+.paragraph-container p {
+  margin: 10px 0;
+}
+
+.paragraph-container p:nth-child(even) {
+  margin-right: 300px;
+}
+
+.paragraph-container p:nth-child(odd) {
+  margin-left: 300px;
+}
+
+.footer-content {
+  padding: 10px;
+  height: 400px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-right: 100px;
+}
+
+.song-title {
+  width: 500px;
+  text-align: center;
+  padding: 0px;
+  margin-top: 100px;
+}
+
+.album-art {
+  background-image: url('../images/air-album-art.jpg');
+  background-size: cover;
+  width: 250px;
+  height: 250px;
+  border: 10px;
+}
+
+.hidden {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.visible {
+  opacity: 1;
+}
