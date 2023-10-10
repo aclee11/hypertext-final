@@ -10,8 +10,8 @@ html {
 @import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&family=DM+Sans:opsz@9..40&display=swap');
 
 body {
-  /* font-family: 'DM Sans', sans-serif; */
   font-family: 'Cutive Mono', monospace;
+  font-size: 22px;
 }
 
 a {
@@ -30,10 +30,6 @@ body {
 .play {
   transition: all .3s ease-in-out;
 }
-
-/* #outer:hover {
-  fill: blue;
-} */
 
 #inner:hover {
   fill: salmon;
